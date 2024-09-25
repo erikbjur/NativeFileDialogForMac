@@ -57,8 +57,8 @@ elseif(WIN32)
   add_library(${LIBRARY_NAME} STATIC ${LIBRARY_SOURCES})
 
   # Link windows Win32 framework to the static library
-  find_library(WIN32_LIBRARY win32 REQUIRED)
-  target_link_libraries(${LIBRARY_NAME} PRIVATE ${WIN32_LIBRARY})
+  #find_library(WIN32_LIBRARY win32 REQUIRED)
+  #target_link_libraries(${LIBRARY_NAME} PRIVATE ${WIN32_LIBRARY})
 
   # Add the main.cpp file for the test application
   add_executable(${APPLICATION_NAME} Application/Windows/src/main.cpp)
