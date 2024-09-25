@@ -24,10 +24,16 @@ find_library(COCOA_LIBRARY Cocoa)
 target_link_libraries(filedialogs PRIVATE ${COCOA_LIBRARY})
 
 # Add the main.cpp file
-add_executable(FileDialogsApp src/main.cpp)
+add_executable(FileDialogsApp MACOSX_BUNDLE src/main.cpp)
 
 # Link the filedialogs library and Cocoa framework to the executable
 target_link_libraries(FileDialogsApp PRIVATE filedialogs ${COCOA_LIBRARY})
 
 # Include directories (so that main.cpp can find FileDialogs.h)
 target_include_directories(FileDialogsApp PRIVATE ${CMAKE_SOURCE_DIR}/src)
+
+# Set the app's Info.plist for macOS
+set_target_properties(FileDialogsApp PROPERTIES
+    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_SOURCE_DIR}/Info.plist"
+)
+
