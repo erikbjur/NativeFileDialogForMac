@@ -9,7 +9,7 @@ project(FileDialogs)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(LIBRARY_NAME FileDialogs)
+set(LIBRARY_NAME FileDialogLibrary)
 
 set(APPLICATION_NAME FileDialogApp)
 
