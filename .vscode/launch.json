@@ -2,6 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug Windows FileDialogsApp",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/ARM64/Debug/FileDialogApp/FileDialogApp.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal"
+    },
+    {
       "name": "Debug MacOSX FileDialogsApp",
       "type": "cppdbg",
       "request": "launch",
