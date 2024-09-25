@@ -2,7 +2,7 @@
 #include "FileDialogs.h"
 #include <commdlg.h>  // For file dialogs
 
-std::string openFileDialog()
+std::string NativeFileDialog::openFileDialog()
 {
   char filename[MAX_PATH] = "";
 
@@ -22,7 +22,7 @@ std::string openFileDialog()
   return "";  // If no file is selected or dialog is canceled
 }
 
-std::string saveFileDialog()
+std::string NativeFileDialog::saveFileDialog()
 {
   char filename[MAX_PATH] = "";
 

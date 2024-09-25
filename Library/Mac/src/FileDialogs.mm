@@ -1,7 +1,7 @@
 #include "FileDialogs.h"
 #import <Cocoa/Cocoa.h>
 
-std::string openFileDialog() {
+std::string NativeFileDialog::openFileDialog() {
   @autoreleasepool {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     [panel setCanChooseFiles:YES];
@@ -16,7 +16,7 @@ std::string openFileDialog() {
   return "";
 }
 
-std::string saveFileDialog() {
+std::string NativeFileDialog::saveFileDialog() {
   @autoreleasepool {
     NSSavePanel *panel = [NSSavePanel savePanel];
 

@@ -3,8 +3,11 @@
 
 #include <string>
 
-// Function declarations for the file dialogs
+namespace NativeFileDialog
+{
+// Function declarations for file dialogs
 std::string openFileDialog();
 std::string saveFileDialog();
+}  // namespace NativeFileDialog
 
-#endif // FILE_DIALOGS_H
+#endif  // FILE_DIALOGS_H
