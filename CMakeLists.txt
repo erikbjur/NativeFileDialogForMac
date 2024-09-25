@@ -57,7 +57,7 @@ if (APPLE)
 
   # Set the app's Info.plist for macOS
   set_target_properties(${APPLICATION_NAME} PROPERTIES
-      MACOSX_BUNDLE_INFO_PLIST "${CMAKE_SOURCE_DIR}/Application/Mac/src/Info.plist"
+      MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Application/Mac/src/Info.plist"
   )
 
 ############## WINDOWS LIBRARY AND TEST APP ########################
