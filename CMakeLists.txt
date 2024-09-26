@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 ############## MAC LIBRARY AND TEST APP ########################
 
 # Set the project name
-project(FileDialogs VERSION 1.1)
+project(FileDialogs VERSION 1.3)
 
 # Enable Objective-C++ support
 set(CMAKE_CXX_STANDARD 20)
